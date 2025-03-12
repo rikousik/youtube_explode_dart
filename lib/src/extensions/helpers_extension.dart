@@ -58,7 +58,7 @@ extension StringUtility on String {
 
   /// Format: HH:MM:SS
   Duration? toDuration() {
-    if (this == 'SHORTS' || trim().isEmpty) {
+    if (this == 'SHORTS' || this == "UPCOMING" || this == "PREMIERE" || trim().isEmpty) {
       return null;
     }
 
